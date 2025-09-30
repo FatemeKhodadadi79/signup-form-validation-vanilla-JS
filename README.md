@@ -10,6 +10,7 @@ Built With: HTML5 -CSS3 -Vanilla JavaScript
 Usage: 1-Clone the repository: git clone https://github.com/YourUsername/signup-form-validation-vanilla-js.git 2-Open the project folder. 3-Open the index.html file in your browser.
 
 License: This project is licensed under the MIT License.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 توضیحات:
 
 این پروژه یک فرم ثبت‌نام است که با استفاده از HTML، CSS و Vanilla JavaScript طراحی و پیاده‌سازی شده است. فرم شامل اعتبارسنجی (Validation) کامل می‌باشد تا ورودی‌های کاربر بررسی و از صحت آن‌ها اطمینان حاصل شود. این اولین پروژه حرفه‌ای من پس از تکمیل آموزش JavaScript می‌باشد و تجربه‌ی ارزشمندی در کار با HTML، CSS و JS خام برایم ایجاد کرده است.
