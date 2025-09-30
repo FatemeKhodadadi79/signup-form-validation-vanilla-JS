@@ -1,4 +1,5 @@
 signup-form-validation-vanilla-JS
+
 My first project using Vanilla JavaScript — a validated registration form
 
 Description: This project is a signup form built using HTML, CSS, and Vanilla JavaScript. The form includes complete validation to ensure that user inputs are correct and meet the required criteria. This is my first professional project after completing my JavaScript training, and it has given me valuable experience working with HTML, CSS, and pure JavaScript.
