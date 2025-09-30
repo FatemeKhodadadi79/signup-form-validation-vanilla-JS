@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@1,500&family=El+Messiri:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AU+VIC+Guides&family=Rubik:ital,wght@0,300..900;1,300..900&family=Turret+Road:wght@200;300;400;500;700;800&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- FirstPage -->
+      <div id="Step1" class="page">
+        <h2>مرحله اول:اطلاعات شخصی</h2>
+        <div>
+          <label for="name">نام و نام خانوادگی <i class="star">*</i></label>
+          <input type="text" id="name" />
+          <p id="allertName" class="allert"></p>
+        </div>
+        <div>
+          <label for="age">سن<i class="star">*</i></label>
+          <input type="text" id="age" />
+          <p id="allertAge" class="allert"></p>
+        </div>
+        <div>
+          <label for="NationalID">کدملی<i class="star">*</i></label>
+          <input type="text" id="NationalID" />
+          <p id="allertID" class="allert"></p>
+        </div>
+        <div class="btn-container">
+          <button class="next-btn">
+            <span>مرحله بعد</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- SecondPage -->
+      <div id="Step2" class="page" style="display: none">
+        <h2>مرحله دوم:مشخصات حساب</h2>
+        <div>
+          <label for="Email">ایمیل(اختیاری)</label>
+          <input type="text" id="Email" />
+          <p id="EmailAllert" class="allert"></p>
+        </div>
+        <div>
+          <label for="Password">رمز عبور <i class="star">*</i></label>
+          <div class="DivPass">
+            <input type="password" id="Password" />
+            <div id="eyeicons1">
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-eye-slash hidden"></i>
+            </div>
+          </div>
+          <p id="PasswordAllert" class="allert"></p>
+        </div>
+        <div>
+          <label for="RepeadPass">تکرار رمز عبور <i class="star">*</i></label>
+          <div class="DivPass">
+            <input type="password" id="RepeadPass" />
+            <div id="eyeicons2">
+              <i class="fa-solid fa-eye eye2"></i>
+              <i class="fa-solid fa-eye-slash eyeslash2 hidden"></i>
+            </div>
+          </div>
+          <p id="RepeadPassAllert" class="allert"></p>
+        </div>
+        <div class="btn-group">
+          <button class="pre-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>مرحله قبل</span>
+          </button>
+          <button class="next-btn">
+            <span>مرحله بعد</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ThirdPage -->
+      <div id="Step3" class="page" style="display: none">
+        <h2>مرحله سوم:تایید</h2>
+        <div class="ConfirmationDiv">
+          <p>نام و نام خانوادگی:<span id="ConformName"></span></p>
+          <p>سن:<span id="ConformAge"></span></p>
+          <p>کدملی:<span id="ConformID"></span></p>
+          <p>ایمیل:<span id="ConformEmail"></span></p>
+          <p class="EditInform"></p>
+        </div>
+        <div class="btn-group">
+          <button class="pre-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>مرحله قبل</span>
+          </button>
+          <button class="Confirmation-btn">
+            <span>تایید </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ConformationPage -->
+      <div id="FinalStep">
+        <div class="FinalConform">
+          <p>آیا تمامی اطلاعات مورد تایید شما هست؟</p>
+          <div class="FinalButtons">
+            <button id="nobtn">خیر</button>
+            <button id="yesbtn">بله</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
